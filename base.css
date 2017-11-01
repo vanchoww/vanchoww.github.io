@@ -1,0 +1,342 @@
+@charset "UTF-8";
+
+/* -----------------------------------------------
+
+	スタイルリセット
+
+----------------------------------------------- */
+body, div, h1, h2, h3, h4, h5, h6, pre, fieldset, p, ul, ol, dl, dt, dd, ins, blockquote, th, td, a {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	font-size: 100%;
+	clear: both;
+}
+img, a img {
+	border: 0;
+	vertical-align: top;
+}
+hr {
+	display: none;
+}
+
+
+/* -----------------------------------------------
+
+	基本要素
+
+----------------------------------------------- */
+
+/* Body 設定
+----------------------------------------------- */
+body {
+	font-size: 90%;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "Noto Sans Japanese";
+	text-align: center;
+	line-height: 1.6;
+	color: #333333;
+}
+
+/* SP */
+@media screen and ( max-width:767px ) {
+	body {
+	font-size: 80%;
+	line-height: 1.45;
+}
+}
+
+/* 基本フォント設定
+----------------------------------------------- */
+address { font: normal normal 100% /1.5; }
+em { font-style: normal; font-weight: bold; }
+strong { font-weight: bold; }
+abbr { border-bottom: 1px dotted #cccccc; cursor: help; }
+sup { line-height: 0.5; }
+pre { word-wrap: break-word; white-space: pre-wrap; }
+
+
+/* a 設定
+----------------------------------------------- */
+a:link,
+a:visited {
+	color: #333;
+	text-decoration: none;
+	opacity:1;
+}
+a:hover {
+	color: #333;
+	text-decoration: none;
+	opacity:0.6;
+}
+
+
+/* List 設定
+----------------------------------------------- */
+ul {
+	list-style-type: square;
+}
+li {
+	margin-left: 2em;
+	padding-bottom: 2px;
+}
+
+
+/* Table 設定
+----------------------------------------------- */
+table {
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 100%;
+	font-size: 100%;
+}
+table td,
+table th {
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-align: left;
+	vertical-align: top;
+	font-weight: normal;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+table thead th {
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+}
+table tbody th {
+	text-align: left;
+	vertical-align: middle;
+}
+caption {
+	text-align: left;
+}
+
+
+/* -----------------------------------------------
+
+	装飾フォント
+
+----------------------------------------------- */
+
+/*- 装飾系 -*/
+.txBold   { font-weight: bold !important; }
+.txItalic { font-style: italic !important; }
+.txNormal { font-weight: normal !important; }
+.txXLarge { font-size: 147%; }
+.txLarge  { font-size: 124%; }
+.txMedium { font-size: 100%; }
+.txSmall  { font-size: 85%; }
+.txUnderLine { text-decoration: underline; }
+
+.txLeft   { text-align: left !important; }
+.txRight  { text-align: right !important; }
+.txCenter { text-align: center !important; }
+
+/*- 回り込み -*/
+.fLeft { float: left; }
+.fRight { float: right; }
+
+/*- クリア -*/
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+/*- マージン -*/
+.m0 { margin: 0 !important; }
+.p0 { padding: 0 !important; }
+.mb0em  { margin-bottom: 0 !important;}
+.mb05em { margin-bottom: 0.5em !important; }
+.mb1em  { margin-bottom: 1em !important; }
+.pb0em  { padding-bottom: 0 !important;}
+.pb05em { padding-bottom: 0.5em !important; }
+.pb1em  { padding-bottom: 1em !important; }
+.pl1em  { padding-left: 1em !important; }
+.pt05em  { padding-top: 0.5em !important; }
+
+/*- flex -*/
+.flex-container {
+	display: -webkit-flex;
+	display: flex;
+}
+.flex-between {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+.flex-around {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+}
+.flex-center {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items:center;
+}
+.flex-start {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
+}
+.flex-wrap {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.flex-end {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-content: flex-end;
+	align-content: flex-end;
+}
+
+.flex-between-y {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-content: space-between;
+	align-content: space-between;
+}
+.flex-content {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+.flex-bottom {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+}
+.flex-conEnd {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+}
+
+/*- grid -*/
+.grid {
+	text-align:left;
+	margin:0 0 10px 0;
+}
+.grid:after {
+	content:"";
+	clear:both;
+	display:block;
+	visibility:hidden;
+	height:0;
+}
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11 {
+	float:left;
+	overflow:hidden;
+	padding:0 0 0.1em 0;
+	margin:0 2% 0 0;
+}
+.grid-1 {
+	width:6.5%;
+}
+.grid-2 {
+	width:15%;
+}
+.grid-3 {
+	width:23.5%;
+}
+.grid-4 {
+	width:32%;
+}
+.grid-5 {
+	width:40.5%;
+}
+.grid-6 {
+	width:49%;
+}
+.grid-7 {
+	width:57.5%;
+}
+.grid-8 {
+	width:66%;
+}
+.grid-9 {
+	width:74.5%;
+}
+.grid-10 {
+	width:83%;
+}
+.grid-11 {
+	width:91.5%;
+}
+.grid-12 {
+	width:100%;
+}
+.grid-1:nth-last-child(2),
+.grid-2:nth-last-child(2),
+.grid-3:nth-last-child(2),
+.grid-4:nth-last-child(2),
+.grid-5:nth-last-child(2),
+.grid-6:nth-last-child(2),
+.grid-7:nth-last-child(2),
+.grid-8:nth-last-child(2),
+.grid-9:nth-last-child(2),
+.grid-10:nth-last-child(2),
+.grid-11:nth-last-child(2) {margin:0;}
+
+.grid-1:last-child,
+.grid-2:last-child,
+.grid-3:last-child,
+.grid-4:last-child,
+.grid-5:last-child,
+.grid-6:last-child,
+.grid-7:last-child,
+.grid-8:last-child,
+.grid-9:last-child,
+.grid-10:last-child,
+.grid-11:last-child {
+	float:right;
+	margin:0;
+}
+
+/* -----------------------------------------------
+
+	ブラウザ設定
+
+----------------------------------------------- */
+
+/* Browser	iPhone文字調整オフ
+----------------------------------------------- */
+@media screen and (max-device-width: 480px) {
+	body {
+		-webkit-text-size-adjust: none;
+	}
+}
+
+/* Browser	音声ブラウザ対応
+----------------------------------------------- */
+.silence {
+	display:none;
+}

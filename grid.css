@@ -1,0 +1,399 @@
+@charset "UTF-8";
+
+.header {
+	text-align: center;
+	padding: 10px 0 0;
+}
+footer {
+	max-width: 100%;
+	background-color: #000;
+	color: #fff;
+	padding: 50px 0 30px 0;
+}
+h2 {
+	text-align: left;
+	padding: 0 0 10px 15px;
+	border-left: 5px solid #0075c4;
+	border-bottom: 1px solid #0075c4;
+	margin: 0 0 30px;
+	font-size: 20px;
+}
+iframe {
+	max-width: 90%;
+	width: 100%;
+	height: 500px;
+}
+main img {
+	max-width: 80%;
+}
+a.text {
+	border-bottom: 2px solid #12abfe;
+}
+.imgTop {
+	padding-top: 3px;
+}
+.txAttention {
+	color: #ef005b;
+}
+div.contBox {
+	padding: 0 0 30px;
+}
+ul.ulNote {
+	list-style-type: none;
+}
+ul.ulNote li {
+	margin-left: 0;
+	text-indent: 0;
+}
+.cd-fixed-bg {
+	min-height: 35%;
+	background-image: url("../images/bg_kv.png");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: top center;
+	text-align: left;
+}
+.cd-scrolling-bg {
+	min-height: 100%;
+}
+.main-nav {
+	max-width: 100%;
+	height: 250px;
+	position: relative;
+	top: 100px;
+	background-image: url("menu_bg.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.main-nav ul {
+	max-width: 1000px;
+	width: 100%;
+	height: 200px;
+	margin: 0 auto;
+	display: table;
+	padding-top: 30px;
+}
+.main-nav ul li {
+	display: table-cell;
+	vertical-align: middle;
+	width: 20%;
+}
+.main-nav ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+.clone-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	width: 100%;
+	height: 80px;
+	padding-top: 5px;
+	background-image: url("menu_bg.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	transition: .3s;
+	transform: translateY(-100%);
+}
+.clone-nav ul {
+	display: table;
+	margin: 0 auto;
+	width: 76%;
+	padding-top: 8px;
+}
+.clone-nav ul li {
+	display: table-cell;
+	width: 20%;
+	line-height: 1.2;
+	vertical-align: middle;
+}
+.clone-nav ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+.is-show {
+	transform: translateY(0);
+}
+.menuWrap {
+	padding-top: 30%;
+}
+.wrap {
+	background: rgba(255,255,255,0.9);
+	padding: 80px 0;
+}
+.contentWrap {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 100px 10px 0;
+}
+.contentBox {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 10px;
+	text-align: left;
+}
+
+#page-top {
+	position: fixed;
+	bottom: 8%;
+	right: 5%;
+	z-index:100;
+	color: #fff;
+	border-radius: 3px;
+	background-color: #000;
+}
+#panel > dt {
+  border-bottom: solid 1px white;
+  border-radius: 5px;
+  background-color: #12abfe;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+#panel > dd {
+  border: solid 1px Silver;
+  margin: 0px;
+  padding: 10px;
+  margin-bottom: 3px;
+  background: #fff;
+}
+#page-top a {
+	padding: 10px 18px;
+	display: block;
+}
+#page-top a:link  {
+	opacity:0.7;
+	color: #fff;
+	text-decoration: none;
+}
+#page-top a:hover {
+	opacity:1;
+}
+.footbana {
+	width: 100%;
+}
+.footbana .flex-around {
+	width: 50%;
+	float: left;
+	padding-bottom: 15px;
+}
+.footbana .flex-around img {
+	max-width: 100%;
+}
+.mailForm {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.mailForm .form-group {
+  margin-bottom: 20px;
+}
+
+.mailForm .heading {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 200;
+  text-align: left;
+  color: #506982;
+  border-bottom: 1px solid #506982;
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+}
+
+.mailForm .controls {
+  text-align: center;
+  position: relative;
+}
+.mailForm .controls input[type="text"],
+.mailForm .controls input[type="email"],
+.mailForm .controls input[type="tel"],
+.mailForm .controls textarea {
+  padding: 12px;
+  border: 1px solid #c6c6c6;
+  width: 100%;
+  max-width: 374px;
+  margin-bottom: 18px;
+  color: #888;
+  background-color: #fff;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.mailForm .controls select {
+  padding: 12px;
+  border: 1px solid #c6c6c6;
+  width: 100%;
+  margin-bottom: 18px;
+  color: #888;
+  background-color: #fff;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.mailForm .controls input[type="text"]:focus, .controls input[type="text"]:hover,
+.mailForm .controls input[type="email"]:focus,
+.mailForm .controls input[type="email"]:hover,
+.mailForm .controls input[type="tel"]:focus,
+.mailForm .controls input[type="tel"]:hover,
+.mailForm .controls textarea:focus,
+.mailForm .controls textarea:hover,
+.mailForm .controls button:focus,
+.mailForm .controls button:hover,
+.mailForm .controls select:focus,
+.mailForm .controls select:hover {
+  outline: none;
+  border-color: #9FB1C1;
+}
+.mailForm .controls input[type="text"]:focus + label, .controls input[type="text"]:hover + label,
+.mailForm .controls input[type="email"]:focus + label,
+.mailForm .controls input[type="email"]:hover + label,
+.mailForm .controls input[type="tel"]:focus + label,
+.mailForm .controls input[type="tel"]:hover + label,
+.mailForm .controls textarea:focus + label,
+.mailForm .controls textarea:hover + label,
+.mailForm .controls button:focus + label,
+.mailForm .controls button:hover + label,
+.mailForm .controls select:focus + label,
+.mailForm .controls select:hover + label {
+  color: #077ABC;
+  cursor: text;
+}
+.mailForm .controls .fa-sort {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  color: #ccc;
+}
+.mailForm .fa-unsorted::before,
+.mailForm .fa-sort::before {
+    content: "▼";
+}
+.mailForm .controls select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.mailForm .controls label {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  color: #999;
+  font-size: 16px;
+  display: inline-block;
+  padding: 0px 10px;
+  background-color: rgba(255, 255, 255, 0);
+  pointer-events: none;
+  -moz-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  -o-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  -webkit-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  transition: color 0.3s, top 0.3s, background-color 0.8s;
+}
+.mailForm .controls label.active {
+  top: -13px;
+  color: #555;
+  background-color: white;
+}
+.mailForm .controls textarea {
+  resize: none;
+  height: 200px;
+}
+.mailForm .controls button {
+  cursor: pointer;
+  background-color: #07B3A1;
+  border: none;
+  color: #fff;
+  padding: 12px 0;
+  width: 70%;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 18px;
+}
+.mailForm .controls button:hover {
+  background-color: #08ccb7;
+}
+
+.pc {
+	display: block;
+}
+.sp {
+	display: none;
+}
+
+/* TABLET */
+@media screen and ( max-width:1024px ) {
+	.cd-fixed-bg {
+		background-image: url("../images/bg_kv_tb.png");
+	}
+	.menuWrap {
+		padding-top: 50%;
+	}
+}
+
+/* SP */
+@media screen and ( max-width:767px ) {
+	iframe {
+		max-width: 100%;
+		width: 100%;
+		height: 300px;
+	}
+	h1 {
+		font-size: 11px;
+		font-weight: 200;
+	}
+	.header {
+		text-align: left;
+	}
+	.clone-nav {
+		background: #000;
+		height: 55px;
+	}
+	.clone-nav ul {
+		width: 95%;
+		padding-top: 8px;
+	}
+	.main-nav {
+		max-width: 100%;
+		height: 200px;
+		position: relative;
+	}
+	.main-nav ul {
+		height: 150px;
+		top: 100%;
+	}
+	.cd-fixed-bg {
+		background-image: url("../images/bg_kv_sp.png");
+	}
+	.menuWrap {
+		padding-top: 40%;
+	}
+	.contentWrap {
+		padding: 80px 10px 0;
+	}
+	#page-top img{
+		max-width:50px;
+		max-height:40px;
+	}
+	.footbana .flex-around {
+		width: 90%;
+		float: none;
+		margin: 0 auto;
+	}
+	.pc {
+		display: none;
+	}
+	.sp {
+		display: block;
+	}
+}
